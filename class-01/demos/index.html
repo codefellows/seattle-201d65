@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+  <head> <!-- this is for meta information, the info about the website -->
+    <title>Day 1 Demo</title><!-- The tab of the website's text-->
+  
+    <style>
+      img {
+        border: dotted #201d65 10px;
+      }
+
+      body {
+        background: #201d6530
+      }
+    </style>
+  </head>
+
+  <body> <!-- all the visible elements on the page and the javascript that helps run it-->
+    <h1 style="color: blue">Welcome to Code Fellows, 201d65, you are awesome!</h1>
+    <p>This is a paragraph tag, it can contain a bunch of text. See more text</p>
+
+    <ul><!-- unordered list-->
+      <li>Ginger : goldendoodle</li> <!-- list item -->
+      <li>Snowdrop: kitty</li>
+      <li>
+        <img src="ginger.JPG" height="500px">
+      </li>
+      <li>
+        <img src="ginger.JPG" style="width: 200px">
+      </li>
+    </ul>
+
+    <!-- `ctrl + / made` this comment -->
+    <script>
+      // Ask 2 questions
+      // do you like snowdrop or ginger better ex : ginger
+      // reply : I love (snowdrop/ginger) so much
+      // what is your favorite thing about (ginger / snowdrop) : ex : her cute head
+      // reply : (snowdrop/ginger) does have a (really cute head)
+
+      var favoritePetAnswer = prompt('Do you like Snowdrop or Ginger better?');
+
+      alert('Oh I love ' + favoritePetAnswer + ' too');
+      console.log('favoritePetAnswer : ' + favoritePetAnswer);
+
+      var favoriteThingAnswer = prompt('What is your fav thing about ' + favoritePetAnswer);
+      console.log('favThing ::: ' + favoriteThingAnswer);
+
+      alert(favoritePetAnswer + ' really is ' + favoriteThingAnswer + '.  I love that too!');
+
+
+
+    </script>
+  </body>
+
+</html>
