@@ -2,6 +2,17 @@
 
 <a id="top"></a>
 
+## Feedback
+
+- Like Code Review
+- Interactivity is working for me
+- It was HARD
+- "What is resounding with me as the first week comes to a close is that although the content is challenging, I truly BELIEVE that I can do this"
+- More than an hour between breaks is pushing it
+- Learning to type code is so different from regular text
+- It sucks to fail but my classmates stick with me through it
+- Surprise at how well bonded we are / how willing we are to both be vulnerable and give help :D
+
 ## Lecture
 
 ## Learning Objectives
