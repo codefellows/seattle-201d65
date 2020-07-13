@@ -80,8 +80,13 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function sumAndMultiply(a, b, c) { //eslint-disable-line
-  var sumOfThree = 
-  return [sumOfThree, ]
+  // var sumOfThree = a + b + c;
+  var sumOfThree = sum(sum(a,b) [0], c) [0];
+  // var productOfThree = a * b * c;
+  var productOfThree = multiply(multiply(a,b) [0], c) [0];
+  // var elementThree = "a and b and c sum to sumOfThree."
+
+  return [sumOfThree, productOfThree, elementThree,];
 }
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
