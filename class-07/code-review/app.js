@@ -49,7 +49,27 @@ var limaStore = {
       // this.cookieArray.push(roundedCookies);
       // done with once
     }
+  },
+
+  renderToPage : function(){
+    // target - ul
+    // new element - li
+    // give it content - this.cookieArray[0] + cookies : 6am
+    // append to the ul
+
+    // should be looped 14 times
+
+    // target - ul
+    // new element - li
+    // give it content - total : + this.calculateTotal()
+    // append to the ul
+  },
+
+  calculateTotal : function(){
+    // adds everyting in the this.cookieArray
+    // return it
   }
+
 
 };
 
