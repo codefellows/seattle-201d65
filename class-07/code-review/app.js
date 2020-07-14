@@ -19,7 +19,7 @@ Seattle
 
 1. make an object
 2. give it properties (inside the curly braces), found on lab page
-3. give it another property that is a function
+3. give it another property that is a function for customers per hour
 4. Make a random number in that property between max and min
 5. do cookie customer math 14 times
 6. take the result of cookie customer math and put it in an array THAT BELONGS TO the store, (not one just defined in the function, but a property of seattle)
@@ -28,3 +28,45 @@ Seattle
 7... - display and calculate
 */
 
+var limaStore = {
+  minCustomers : 2,
+  maxCustomers : 16,
+  averageCookiePerCustomer : 4.6,
+  cookieArray : [],
+
+  produceRandomCustomersPerHour : function(){
+    var myRandomNum = getRandomIntInclusive(this.minCustomers, this.maxCustomers);
+    return myRandomNum;
+  },
+
+  produceCookiesSoldAllDay : function(){
+    for(var i = 0; i < 14; i++){
+      // works once
+      var cookiesSoldThisHour = this.produceRandomCustomersPerHour() * this.averageCookiePerCustomer;
+      var roundedCookies = Math.floor(cookiesSoldThisHour);
+
+      this.cookieArray[i] = roundedCookies;
+      // this.cookieArray.push(roundedCookies);
+      // done with once
+    }
+  }
+
+};
+
+limaStore.produceCookiesSoldAllDay();
+
+
+
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random
+
+function getRandomIntInclusive(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min + 1)) + min; //The maximum is inclusive and the minimum is inclusive
+}
+
+
+
+
+// customersThishour - do it once
+// customersEveryHour- do it 14 times
