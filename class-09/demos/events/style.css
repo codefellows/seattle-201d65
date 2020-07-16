@@ -1,0 +1,14 @@
+.orange {
+  color: orange;
+  font-size: 3em;
+}
+
+.potato {
+  color: blue;
+  font-size: 4em;
+}
+
+.small {
+  font-size: .25em;
+  transition: 3000ms;
+}
