@@ -29,17 +29,18 @@ Write a function called sum() that takes in two numbers as arguments and then re
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSum() function below and check the console to see if the test passes.*/
 
 // Write your code here
+
 function sum(a, b) { //eslint-disable-line
   console.log('something');
   var theSum = a + b;
   var theString = 'The sum of ' + a +' and ' + b +' is ' +theSum +'.';
 
   console.log(theSum, theString);
-  return [theSum, theString];
+  return[theSum, theString];
 }
 
 // Here is the test for sum(); uncomment it to run it
-testSum(4, 7);
+testSum();
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -53,11 +54,17 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiply(a, b) { //eslint-disable-line
+  console.log('something');
+  var theProduct = a * b;
+  var theMultiple = 'The product of ' + a + ' and ' + b + ' is ' + theProduct + '.';
+
+  console.log(theProduct, theMultiple);
+  return[theProduct, theMultiple];
 
 }
 
 // Here is the test for multiply(); uncomment it to run it
-// testMultiply(5,9);
+testMultiply(5,9);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -74,11 +81,20 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function sumAndMultiply(a, b, c) { //eslint-disable-line
+  var firstSum = sum(a, b);
+  var secondSum = sum(firstSum[0], c);
+  var theSecondString = a + ' and ' + b + ' and ' + c + ' sum to ' + secondSum[0] + '.';
 
+  var firstProduct = multiply(a, b);
+  var secondProduct = multiply(firstProduct[0], c);
+  var theSecondMultipleString = 'The product of ' + a + ' and ' + b + ' and ' + c + ' is ' + secondProduct[0] + '.';
+
+  return [secondSum[0], secondProduct[0], theSecondString, theSecondMultipleString];
 }
 
+
 // Here is the test for sumAndMultiply(); uncomment it to run it
-// testSumAndMultiply(4,7,5);
+testSumAndMultiply(4,7,5);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -96,6 +112,9 @@ Test this function by hand in the console to get it working, and when you think 
 var testArray = [2, 3, 4]; //eslint-disable-line
 
 function sumArray(sumArr) { //eslint-disable-line
+  var sumArr = secondSum[0]
+
+
 
 }
 
